@@ -1,0 +1,6 @@
+[submodule "eIDAS-ISS-Teem-Login"]
+	path = eIDAS-ISS-Teem-Login
+	url = https://github.com/endimion/eIDAS-ISS-Teem-Login.git
+[submodule "eIDAS-ISS-Login"]
+	path = eIDAS-ISS-Login
+	url = https://github.com/endimion/eIDAS-ISS-Login.git
