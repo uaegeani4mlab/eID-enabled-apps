@@ -21,8 +21,9 @@ Functional Name: UAegean Online (P2P) Communities
 
 This repository is separated in the following parts:
 
-* **eIDAS-ISS-Teem-Login**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with  Online Community Student Program facilities and services of Univ. of the Aegean
-* **eIDAS-ISS-Login**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with  e-Diploma Supplement Provision (Student Registry of Univ. of the Aegean) and the UAegean Smart Class
+* **UAegean-Online-P2P-Communities-web-app**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with Online P2P Communities services of Univ. of the Aegean
+* **e-Diploma-Supplement-Service-web-app**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with  e-Diploma Supplement Service of the Univ. of the Aegean
+* **UAegean-Smart-Class-web-app**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with the University of the Aegean Smart Class
 
 ## Additional Information
 Additional Information regarding the project and its deliverables can be found at:https://docs.google.com/document/d/13A2m80xme22Jy35ZLueOwxIeC-NTU1-_k8qFpGemU0A/edit?usp=sharing
