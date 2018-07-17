@@ -1,24 +1,22 @@
 ![CEF Logo](https://dss.aegean.gr/eidas/img/en_cef.jpg)
-# eIDApps
+# eID enabled apps
 
 This project was developed with funding form "Transformation of Greek e-Gov Services to eIDAS Crossborder Services", Agreement number: INEA/CEF/ICT/A2015/1147836 | Action No: 2015-EL-IA-0083, by the "Information Management Lab (i4M Lab)", which is part of the research group "ATLANTIS Group".
 
 ### Project Scope
 ---
-
 Reference: UAegean Services
 Online Community Student Program facilities and services, Student Registry, Smart Class Program
 as defined in GA Annex I, Activity 4 - Connection of Academia and Research related services to eIDAS Node
 
 #### Action implementation
 ---
-
 Activity 4 of the Action has implemented the integration of the following UAegean services with the Greek eIDAS node and, consequently, with the eIDAS Network:
-1. e-Diploma Supplement Provision (Student Registry of Univ. of the Aegean)
+1. [e-Diploma Supplement Provision](https://dss,aegean.gr) (Student Registry of Univ. of the Aegean)
 Functional Name: e-Diploma Supplement Service
-2. Smart Class Program of the Univ. of the Aegean
+2. [Smart Class Program of the Univ. of the Aegean](https://eideusmartclass.aegean.gr/)
 Functional Name: UAegean Smart Class
-3. Online Community Student Program facilities and services of Univ. of the Aegean
+3. [Online Community Student Program](http://communities-i4mlab.aegean.gr) facilities and services of Univ. of the Aegean
 Functional Name: UAegean Online (P2P) Communities
 
 
