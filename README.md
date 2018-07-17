@@ -12,7 +12,7 @@ as defined in GA Annex I, Activity 4 - Connection of Academia and Research relat
 #### Action implementation
 ---
 Activity 4 of the Action has implemented the integration of the following UAegean services with the Greek eIDAS node and, consequently, with the eIDAS Network:
-1. [e-Diploma Supplement Provision](https://dss,aegean.gr) (Student Registry of Univ. of the Aegean)
+1. [e-Diploma Supplement Provision](https://dss.aegean.gr) (Student Registry of Univ. of the Aegean)
 Functional Name: e-Diploma Supplement Service
 2. [Smart Class Program of the Univ. of the Aegean](https://eideusmartclass.aegean.gr/)
 Functional Name: UAegean Smart Class
