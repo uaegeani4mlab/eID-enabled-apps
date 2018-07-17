@@ -1,0 +1,51 @@
+version: '2'
+services:
+    smartClassApp:
+        container_name: smartClassApp
+        image: endimion13/eidas-gr-smartclass:0.8.19
+        network_mode: "host"
+        expose:
+            - 9090
+        ports:
+            - 9090:9090
+        environment:
+            - KEY=secret
+            - RASPBERRY_URL=http://test.com
+            - RASPBERRY_CLOSE_ROOM=closeroom
+            - AD_MICROSERV=http://eideusmartclass.aegean.gr/ad/v2
+            - LOGIN_URL=http://eideusmartclass.aegean.gr/eidasLogin/login
+            
+    
+    loginWebApp:
+       image: endimion13/eidas-gr-isswebapp:1.8.6.0
+       ports:
+         - 9091:8090
+       environment:
+         - EIDAS_PROPERTIES=CurrentFamilyName,CurrentGivenName,DateOfBirth,PersonIdentifier
+         - SP_FAIL_PAGE=http://eideusmartclass.aegean.gr:9091/authFail
+         - SP_SUCCESS_PAGE=http://eideusmartclass.aegean.gr/eIDASSuccess
+         - SP_LOGO=/img/logo2.png
+         - ISS_URL=https://eidasiss.aegean.gr:8081/ISS2/ValidateToken
+         - ISS_PRE_URL=https://eidasiss.aegean.gr:8081/ISS2/ValidateToken
+         - SP_SERVER=http://eideusmartclass.aegean.gr
+         - SP_ID=sp1
+         - SP_SECRET=secret
+         - AUTH_DURATION=43800
+         - UAEGEAN_LOGIN=true
+         - CLIENT_ID=867kszvon99qp4
+         - REDIRECT_URI=http://eideusmartclass.aegean.gr:9091/linkedInResponse
+         - LINKED_IN_SECRET=7hrWS3oDQlhFEXvQ  
+         - LINKED_IN=true
+         - URL_PREFIX=/eidasLogin
+         - UAEGEAN_AP=https://eidasiss.aegean.gr:8081/ISS2/ldap.jsp
+       volumes:
+         - ./webappConfig:/webappConfig
+
+
+    adMicroServ:
+       image: endimion13/ad-micro-service:0.5.6
+       ports:
+           - 8000:8000
+       environment:
+           - KEY=secret
+

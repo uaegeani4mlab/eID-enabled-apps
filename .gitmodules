@@ -1,9 +1,0 @@
-[submodule "e-Diploma-Supplement-Service-web-app"]
-	path = e-Diploma-Supplement-Service-web-app
-	url = https://github.com/endimion/e-Diploma-Supplement-Service-web-app.git
-[submodule "UAegean-Online-P2P-Communities-web-app"]
-	path = UAegean-Online-P2P-Communities-web-app
-	url = https://github.com/endimion/UAegean-Online-P2P-Communities-web-app.git
-[submodule "UAegean-Smart-Class-web-app"]
-	path = UAegean-Smart-Class-web-app
-	url = https://github.com/endimion/UAegean-Smart-Class-web-app.git
