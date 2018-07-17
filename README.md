@@ -26,7 +26,7 @@ Functional Name: UAegean Online (P2P) Communities
 ---
 This repository is separated in the following parts:
 
-* **[UAegean-Online-P2P-Communities-web-app](https://github.com/uaegeani4mlab/eID-enabled-apps/tree/master/UAegean-Online-P2P-Communities-web-app)****, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with Online P2P Communities services of Univ. of the Aegean
+* **[UAegean-Online-P2P-Communities-web-app](https://github.com/uaegeani4mlab/eID-enabled-apps/tree/master/UAegean-Online-P2P-Communities-web-app)**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with Online P2P Communities services of Univ. of the Aegean
 * **[e-Diploma-Supplement-Service-web-app](https://github.com/uaegeani4mlab/eID-enabled-apps/tree/master/e-Diploma-Supplement-Service-web-app)**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with  e-Diploma Supplement Service of the Univ. of the Aegean
 * **[UAegean-Smart-Class-web-app](https://github.com/uaegeani4mlab/eID-enabled-apps/tree/master/UAegean-Smart-Class-web-app)**, this repository folder contains the microservice responsible for integrating the eIDAS infrastructure with the University of the Aegean Smart Class
 
