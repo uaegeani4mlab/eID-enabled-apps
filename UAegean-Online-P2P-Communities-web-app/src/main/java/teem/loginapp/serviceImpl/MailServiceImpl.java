@@ -17,6 +17,7 @@ import javax.mail.internet.MimeMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
@@ -37,6 +38,9 @@ public class MailServiceImpl implements MailService {
     @Autowired
     private MailContentBuilder mailContentBuilder;
 
+    @Value("${mail.password}")
+    private String mailPass;
+
     private final static String MAIL_HOST = "smtp.aegean.gr";
     private final static String MAIL_FRIENDLY_NAME = "UAegean Online Communities";
     private final static String MAIL_SERVER_FROM = "@aegean.gr";
@@ -51,7 +55,7 @@ public class MailServiceImpl implements MailService {
         this.mailSender.setHost(MAIL_HOST);
         this.mailSender.setPort(587);
         this.mailSender.setUsername("onlinecommunities@aegean.gr");
-        this.mailSender.setPassword("ooo111!!!");
+        this.mailSender.setPassword(mailPass);
 //        this.mailSender.setProtocol("smtp");
         Properties props = new Properties();
         props.put("mail.transport.protocol", "smtp");
@@ -77,7 +81,7 @@ public class MailServiceImpl implements MailService {
             helper.setFrom(new InternetAddress(FROM, MAIL_FRIENDLY_NAME));
             helper.setSubject(emailContents.getSubject());
 
-            String content = mailContentBuilder.build(userName,displayName,password);
+            String content = mailContentBuilder.build(userName, displayName, password);
 
             helper.setText(content, true);
 
